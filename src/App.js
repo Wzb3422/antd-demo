@@ -129,7 +129,7 @@ const App = () => {
           </Row>
         </Card>
         <Card style={{marginTop: 12}}>
-          <Table pagination={{defaultPageSize: 8}} loading={dataArr.length === 0} columns={columns} dataSource={dataArr} key='id'/>
+          <Table pagination={{defaultPageSize: 8}} columns={columns} dataSource={dataArr ? dataArr : []} key='id'/>
         </Card>
         <div style={{textAlign: 'center', margin: '28px 0px'}}>
           <Typography.Text>Copyright @ 2020 南昌大学人工智能工业研究院 ┆ iData</Typography.Text>
