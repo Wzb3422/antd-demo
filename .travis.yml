@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+    - '12'
+cache:
+  directories:
+    - node_modules
+install:
+  - yarn install
+
+before_script:
+script:
+  - yarn build
+
+after_script:
+  - cd ./build
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
