@@ -96,7 +96,7 @@ const App = () => {
       endReportTime: dayjs().format('YYYY-MM-DD 23:59:59')
     })
     const arr = response.data.result
-    if (arr.length > 0) {
+    if (arr?.length > 0) {
       setDataArray(arr)
     }
     setIsUpdating(false)
